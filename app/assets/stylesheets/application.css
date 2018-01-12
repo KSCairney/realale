@@ -15,7 +15,15 @@
  */
 
 
-.titlelogo {
+#titlelogo {
     font-family: 'Cinzel', serif;
     color: #9b8755;
+    font-size: 2.5em;
 }
+
+ footer p {
+    font-family: 'Cinzel', serif;
+    color: #9b8755; 
+ }
+ 
+
