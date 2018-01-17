@@ -3,36 +3,107 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #titlelogo {
-    font-family: 'Cinzel', serif;
-    color: #9b8755;
-    font-size: 2.5em;
+  font-family: 'Cinzel', serif;
+  color: #9b8755;
+  font-size: 4em;
+  text-align: center;
+  margin: auto;
 }
 
- footer p {
-    font-family: 'Cinzel', serif;
-    color: #9b8755; 
- }
- .buffer {
-     height: 50px;
- }
- 
- .cd-background-wrapper {
-  overflow: hidden;
-  perspective: 4000px;
+footer p {
+  font-family: 'Cinzel', serif;
+  color: #9b8755; 
 }
- 
-.cd-floating-background {
-  transform-style: preserve-3d;
+
+
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+  color: #9b8755;
+  text-align: center;
+  margin: auto;
 }
- 
-.cd-floating-background img:first-child {
-  transform: translateZ(50px);
+
+h3 {
+  font-family: 'Cinzel', serif;
+  color: #ffffff;
+  text-align: center;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.8);
 }
- 
-.cd-floating-background img:nth-child(2) {
-  transform: translateZ(290px);
+
+.spacer {
+  width: 100%;
+  height: 100px;
 }
- 
-.cd-floating-background img:nth-child(3) {
-  transform: translateZ(400px);
+.labelbox {
+  background-color: white;
+  padding-bottom: 10px;
+}
+
+.infobox {
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.parallax { 
+  background-image: url(/assets/galahad.jpg);
+  height: 400px; 
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 { 
+  background-image: url(/assets/knights.jpg);
+  height: 700px; 
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax3 { 
+  background-image: url(/assets/lance.jpg);
+  height: 700px; 
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.texty {
+  font-family: 'Cormorant Garamond', serif;
+  color: #9b8755; 
+  font-size: 1.5em;
+  text-align: center;
+  margin: auto;
+}
+
+.texts {
+  font-family: 'Cormorant Garamond', serif;
+  color: #9b8755; 
+  font-size: 1.2em;
+  text-align: center;
+  margin: auto;
+}
+
+.ltext {
+  font-family: 'Cormorant Garamond', serif;
+  color: #9b8755; 
+  font-size: .7em;
+  text-align: center;
+  margin: auto;
+}
+
+#namme {
+  font-family: 'Cinzel', serif;
+  color: #9b8755; 
+  font-size: 2em;
+  text-align: center;
+  margin: auto;
 }
