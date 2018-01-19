@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @tap.name %>
+</p>
+
+<p>
+  <strong>Brewery:</strong>
+  <%= @tap.brewery %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @tap.type %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @tap.color %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @tap.description %>
+</p>
+
+<p>
+  <strong>Img url:</strong>
+  <%= @tap.img_url %>
+</p>
+
+<p>
+  <strong>Draft:</strong>
+  <%= @tap.draft %>
+</p>
+
+<%= link_to 'Edit', edit_tap_path(@tap) %> |
+<%= link_to 'Back', taps_path %>
