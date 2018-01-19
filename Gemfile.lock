@@ -82,6 +82,7 @@ GEM
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
     parallaximage-rails (1.0.0)
+    pg (1.0.0)
     rack (2.0.3)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -165,6 +166,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   parallaximage-rails
+  pg
   rails (= 5.0.0)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
