@@ -24,13 +24,8 @@
     <div class="infobox">
       <h2>What's On:</h2>
       <% @taps.each do |tap| %>
-        <div class="beer texty"><%= tap.name %> | <%= tap.brewery %> | <%= tap.type %> | <%= tap.draft %></div>
+        <div class="beer texty"><%= tap.name %> | <%= tap.brewery %> | <%= tap.style %> | <%= tap.draft %></div>
       <% end %>
-      <p class="texty">Brown Ale | Some Brewery | Cask</p>
-      <p class="texty">Pale Ale | Another Brewery | Cask</p>
-      <p class="texty">Stout | Beer Place Brewing | Cask</p>
-      <p class="texty">Lager | Lager Land | Keg</p>
-      <p class="texty">American Pale Ale | America Craft Brewery | Keg</p>
     </div>
   </div>
   <div class="row">
