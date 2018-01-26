@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180123224824) do
+ActiveRecord::Schema.define(version: 20180126210013) do
 
   create_table "taps", force: :cascade do |t|
     t.string   "name"
     t.string   "brewery"
-    t.string   "type"
+    t.string   "style"
     t.string   "color"
     t.text     "description"
     t.string   "img_url"
