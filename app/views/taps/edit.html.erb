@@ -1,6 +1,11 @@
-<h1>Editing Tap</h1>
+<h1 class="titlelogo">Editing Tap</h1>
 
-<%= render 'form', tap: @tap %>
+<div class="row">
+  <div class="buff col-xl-2 col-lg-2 col-md-2 col-sm-1 col-xs-1"></div>
+  <div class="col-xl-10 col-lg-10 col-md-10 col-sm-11 col-xs-1">
+        <%= render 'form', tap: @tap %>
 
-<%= link_to 'Show', @tap %> |
-<%= link_to 'Back', taps_path %>
+        <%= link_to 'Show', @tap %> |
+        <%= link_to 'Back', taps_path %>
+    </div>
+</div>
