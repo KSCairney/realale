@@ -1,5 +1,7 @@
 class TapsController < ApplicationController
   before_action :set_tap, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
+  load_and_authorize_resource
 
   # GET /taps
   # GET /taps.json
