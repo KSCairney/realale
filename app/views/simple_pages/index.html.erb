@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <div class="row">
+  <div id="home" class="row">
     <div class="parallax"></div>
   </div>
   <div class="row">
@@ -8,12 +8,24 @@
       <p class="texts">Castle Park | Lancaster</p>
       <p class="texts">Real Ale | Less-Than-Awful Food | Grumpy Barstaff</p>
     </div>
+    <div id='navy'>
+      <ul class='navy_items'>
+        <li><a href="#home">Home</a></li>
+        <li> | </li>
+        <li><a href="#about">About Us</a></li>
+        <li> | </li>
+        <li><a href="#whatson">What's On?</a></li>
+        <li> | </li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
   </div>
   <div class="row">
     <div class="parallax"></div>
   </div>
   <div class="row">
-    <div class="infobox">
+    <div id="about" class="infobox">
+      <h2 class="mintitle">About Us</h2>
       <p class="texty">Located in downtown Lancaster. The ideal place to find great real ales and artisinal food.</p>
     </div>
   </div>
@@ -21,8 +33,8 @@
     <div class="parallax2"></div>
   </div>
   <div class="row">
-    <div class="infobox">
-      <h2>What's On:</h2>
+    <div id="whatson" class="infobox">
+      <h2 class="mintitle">What's On?</h2>
       <% @taps.each do |tap| %>
         <div class="beer texty"><%= tap.name %> | <%= tap.brewery %> | <%= tap.style %> | <%= tap.draft %> | <%= tap.abv %></div>
       <% end %>
@@ -32,7 +44,8 @@
     <div class="parallax3"></div>
   </div>
   <div class="row">
-    <div class="infobox">
+    <div id="contact" class="infobox">
+      <h2 class="mintitle">Contact Us</h2>
       <p class="texty">Contact us at +05555555555</p>
     </div>
   </div>

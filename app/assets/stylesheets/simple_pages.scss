@@ -114,3 +114,46 @@ h3 {
   text-align: center;
   margin: auto;
 }
+
+.navy-fixed {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+}
+
+#navy {
+	border: 0;
+	background-color: white;
+	border-radius: 0px;
+	margin-bottom: 0;
+  height: 30px;
+}
+
+.navy_items {
+  margin: auto;
+  text-align: center;
+  padding-left: 0;
+}
+
+.navy_items li {
+  padding-top: 6px;
+	display: inline-block;
+	color: #9b8755;
+	font-family: 'Cinzel', serif;
+	font-size: 1.5em;
+}
+
+.navy_items li a {
+	color: #9b8755;
+	text-decoration: none;
+}
+
+.mintitle {
+  font-family: 'Cinzel', serif;
+	font-size: 1.5em;
+  color: #9b8755;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 5px;
+}
