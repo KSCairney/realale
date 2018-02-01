@@ -16,6 +16,8 @@
         <li> | </li>
         <li><a href="#whatson">What's On?</a></li>
         <li> | </li>
+        <li><a href="#hours">Hours & Events</a></li>
+        <li> | </li>
         <li><a href="#contact">Contact Us</a></li>
       </ul>
     </div>
@@ -42,6 +44,36 @@
   </div>
   <div class="row">
     <div class="parallax3"></div>
+  </div>
+  <div class="row">
+    <div id="hours" class="infobox">
+      <h2 class="mintitle">Hours</h2>
+        <div class="beer texty">Monday, Tuesday, Wednesday, Thursday | 2pm - 10pm</div>
+        <div class="beer texty">Friday, Saturday | Noon - Midnight</div>
+        <div class="beer texty">Sunday | Noon - 10pm</div>
+        <br>
+      <h2 class="mintitle">Events</h2>
+      <% @events.each do |event| %>
+        <div class="beer texty"><% if event.scheduled_time.wday == 0 %>
+          Sunday, <%= localize(event.scheduled_time, :format => :long) %> | <%= event.name %> | <%= event.description %>
+        <% elsif event.scheduled_time.wday == 1 %>
+            Monday, <%= localize(event.scheduled_time, :format => :long) %> | <%= event.name %> | <%= event.description %>
+        <% elsif event.scheduled_time.wday == 2 %>
+            Tuesday, <%= localize(event.scheduled_time, :format => :long) %> | <%= event.name %> | <%= event.description %>
+        <% elsif event.scheduled_time.wday == 3 %>
+            Wednesday, <%= localize(event.scheduled_time, :format => :long) %> | <%= event.name %> | <%= event.description %>
+        <% elsif event.scheduled_time.wday == 4 %>
+            Thursday, <%= localize(event.scheduled_time, :format => :long) %> | <%= event.name %> | <%= event.description %>
+        <% elsif event.scheduled_time.wday == 5 %>
+            Friday, <%= localize(event.scheduled_time, :format => :long) %> | <%= event.name %> | <%= event.description %>
+        <% elsif event.scheduled_time.wday == 6 %>
+            Saturday, <%= localize(event.scheduled_time, :format => :long) %> | <%= event.name %> | <%= event.description %>
+        <% end %></div>
+      <% end %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="parallax4"></div>
   </div>
   <div class="row">
     <div id="contact" class="infobox">
