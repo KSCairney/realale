@@ -12,6 +12,7 @@ class TapsController < ApplicationController
   # GET /taps/1
   # GET /taps/1.json
   def show
+    authorize! :show, @project
   end
 
   # GET /taps/new
@@ -71,6 +72,6 @@ class TapsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tap_params
-      params.require(:tap).permit(:name, :brewery, :style, :color, :description, :img_url, :draft, :abv)
+      params.require(:tap).permit(:name, :brewery, :style, :color, :description, :img_url, :draft, :abv, :now_on)
     end
 end

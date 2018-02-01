@@ -14,46 +14,53 @@
         <li> | </li>
         <li><a href="#about">About Us</a></li>
         <li> | </li>
+        <li><a href="#hours">Hours</a></li>
+        <li> | </li>
         <li><a href="#whatson">What's On?</a></li>
         <li> | </li>
-        <li><a href="#hours">Hours & Events</a></li>
+        <li><a href="#events">Events</a></li>
         <li> | </li>
         <li><a href="#contact">Contact Us</a></li>
       </ul>
     </div>
   </div>
-  <div class="row">
+  <div id="about" class="row">
     <div class="parallax"></div>
   </div>
   <div class="row">
-    <div id="about" class="infobox">
+    <div class="infobox">
       <h2 class="mintitle">About Us</h2>
       <p class="texty">Located in downtown Lancaster. The ideal place to find great real ales and artisinal food.</p>
     </div>
   </div>
-  <div class="row">
+  <div id="hours"  class="row">
     <div class="parallax2"></div>
   </div>
   <div class="row">
-    <div id="whatson" class="infobox">
-      <h2 class="mintitle">What's On?</h2>
-      <% @taps.each do |tap| %>
-        <div class="beer texty"><%= tap.name %> | <%= tap.brewery %> | <%= tap.style %> | <%= tap.draft %> | <%= tap.abv %></div>
-      <% end %>
-    </div>
-  </div>
-  <div class="row">
-    <div class="parallax3"></div>
-  </div>
-  <div class="row">
-    <div id="hours" class="infobox">
+    <div class="infobox">
       <h2 class="mintitle">Hours</h2>
         <div class="beer texty">Monday, Tuesday, Wednesday, Thursday | 2pm - 10pm</div>
         <div class="beer texty">Friday, Saturday | Noon - Midnight</div>
         <div class="beer texty">Sunday | Noon - 10pm</div>
-        <br>
+    </div>
+  </div>
+  <div id="whatson" class="row">
+    <div class="parallax3"></div>
+  </div>
+  <div class="row">
+    <div class="infobox">
+      <h2 class="mintitle">What's On?</h2>
+      <% @taps.order(:abv).where(:now_on => true).each do |tap| %>
+        <div class="beer texty"><%= tap.name %> | <%= tap.brewery %> | <%= tap.style %> | <%= tap.draft %> | <%= tap.abv %></div>
+      <% end %>
+    </div>
+  <div id="events" class="row">
+    <div class="parallax4"></div>
+  </div>
+  <div class="row">
+    <div class="infobox">
       <h2 class="mintitle">Events</h2>
-      <% @events.each do |event| %>
+      <% @events.order(:scheduled_time).limit(5).each do |event| %>
         <div class="beer texty"><% if event.scheduled_time.wday == 0 %>
           Sunday, <%= localize(event.scheduled_time, :format => :long) %> | <%= event.name %> | <%= event.description %>
         <% elsif event.scheduled_time.wday == 1 %>
@@ -72,11 +79,11 @@
       <% end %>
     </div>
   </div>
-  <div class="row">
-    <div class="parallax4"></div>
+  <div id="contact" class="row">
+    <div class="parallax5"></div>
   </div>
   <div class="row">
-    <div id="contact" class="infobox">
+    <div class="infobox">
       <h2 class="mintitle">Contact Us</h2>
       <p class="texty">Contact us at +05555555555</p>
     </div>

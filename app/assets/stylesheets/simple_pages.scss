@@ -84,6 +84,16 @@ h3 {
 }
 
 .parallax4 { 
+  background-image: url(/assets/king.jpg);
+  height: 700px; 
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax5 { 
   background-image: url(/assets/angel.jpg);
   height: 700px; 
   width: 100%;

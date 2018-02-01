@@ -6,6 +6,8 @@ class Ability
     can :manage, User, id: user.id
     can :manage, Tap, id: user.id
     can :manage, Event, id: user.id
+    can :read, :all
+    can :manage, :all
     # Define abilities for the passed in user here. For example:
     #
     #   user ||= User.new # guest user (not logged in)
